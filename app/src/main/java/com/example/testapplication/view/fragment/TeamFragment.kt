@@ -95,6 +95,7 @@ class TeamFragment : Fragment(R.layout.fragment_team) {
             adapter = batsmanAdapter
             layoutManager = LinearLayoutManager(activity)
         }
+
         batsmanAdapter.onBatsmanClicked {
             showDialog(Common.getPlayerInfo(seriesData, it.batsman,Common.teamSelected))
         }
