@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textPlayerName"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:background="@color/cornsilk"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/textPlayerPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="end"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Batting Info"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Style"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/textBattingStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="end"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average"
+            android:textSize="14sp"
+            />
+
+        <TextView
+           android:id="@+id/textBattingAverage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="end"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strikerate"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/textBatsmanStrikeRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="end"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Runs"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/textBatsmanRuns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="end"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bowling Info"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Style"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/textBowlingStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="end"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/textBowlingAverage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="end"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Economyrate"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/textBowlingEconomyrateRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="end"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wickets"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/textBowlingWickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="end"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

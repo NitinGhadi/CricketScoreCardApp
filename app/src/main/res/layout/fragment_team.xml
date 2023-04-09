@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    tools:context=".view.fragment.TeamFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textSeriesName"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="India in New Zealand, 5 ODI Series, 2019"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textLeague"
+                            android:text="icc"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" • "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textMatchDate"
+                            android:text="10/12/2022 15:30"
+                            />
+
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/textDayNight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DayNight"
+                            android:padding="5dp"
+                            android:textColor="@color/white"
+                            android:background="@color/night_blue"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/textTeamARun"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:text="120/7(10)"
+                            android:gravity="center"
+                            android:background="@drawable/shape_circle"
+                            />
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/textTeamBRun"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="127/3(20)"
+                            android:background="@drawable/shape_circle"
+                            />
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/textTeamAShortName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Team A"
+                            android:textColor="@color/purple_200"
+                            />
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="vs"
+                            />
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/textTeamBShortName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Team B"
+                            android:textColor="@color/purple_200"
+                            />
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Result"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/textSeriesNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="4th ODi"
+                            android:textSize="12sp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="#B2FFFF"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Player of the Match"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/textViewMatchPlayer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00308F"
+                        android:text="- "
+                        />
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:id="@+id/textTeamAName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Team A"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:id="@+id/textTeamBName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Team B"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_weight="5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Batting"
+                            android:textSize="14sp"
+                            android:padding="5dp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Run"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Ball"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:text="6s"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="4s"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="S/R"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleTeamBatsman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Extra : "
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LB "/>
+
+                        <TextView
+                            android:id="@+id/textLb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=",NB "/>
+
+                        <TextView
+                            android:id="@+id/textNB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=",W "/>
+
+                        <TextView
+                            android:id="@+id/textW"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Run : "
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/textTotalRun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=", wikt "/>
+                        <TextView
+                            android:id="@+id/textTotalWikt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=", Ov "/>
+
+                        <TextView
+                            android:id="@+id/textOv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fall of Wicket"/>
+
+                    <TextView
+                        android:id="@+id/textFallOfWicket"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="14/5/5"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                       >
+
+
+
+                        <TextView
+                            android:layout_weight="5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Bowling"
+                            android:textSize="14sp"
+                            android:padding="5dp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="O"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="M"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:text="R"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="W"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Econ"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleTeamBowler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:padding="5dp"
+                    android:text="Venue :"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textVenue"
+                    android:padding="5dp"
+                    android:text="Match Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/off_white"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading.. Please Wait "
+            />
+    </LinearLayout>
+
+</FrameLayout>

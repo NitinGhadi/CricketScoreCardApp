@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#FFFFF0"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textBatsmanIsCaptain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(C)"
+            android:textColor="@color/amber"
+            />
+
+        <TextView
+            android:id="@+id/textBatsmankiper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(W)"
+            android:textColor="@color/emerald_green"
+            />
+
+
+
+        <TextView
+            android:id="@+id/textBatsmanName"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Batsman Name"
+            android:textSize="14sp"
+            android:textColor="@color/brown"
+            />
+
+
+
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/textBatsmanRun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/burnt_sienna"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/textBatsmanBallTaken"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:textColor="@color/burnt_sienna"
+            />
+
+        <TextView
+            android:id="@+id/textBatsmanNoOfSix"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="6"
+            android:textSize="14sp"
+            android:textColor="@color/burnt_sienna"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/textBatsmanNoOfFour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="@color/burnt_sienna"
+            android:layout_weight="1"
+            />
+
+
+
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/textBatsmanStrikeRate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textColor="@color/burnt_sienna"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="14sp"
+        android:id="@+id/textBatsmanHowOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How Out"
+        />
+
+
+</LinearLayout>
