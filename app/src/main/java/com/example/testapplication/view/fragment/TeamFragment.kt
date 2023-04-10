@@ -38,14 +38,27 @@ class TeamFragment : Fragment(R.layout.fragment_team) {
 
     val seriesDetailsViewModel: SeriesDetailsViewModel by viewModels()
 
+    var isFirst: Boolean = false
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
 
-        var isFirst = args.isFirst
+        isFirst = args.isFirst
 
         binding = FragmentTeamBinding.bind(view)
 
+
+
+       checkIsOnline()
+
+        binding.btnReTry.setOnClickListener{
+            checkIsOnline()
+        }
+    }
+
+
+    fun liveCall(){
         seriesDetailsViewModel.seriesDetails.observe(viewLifecycleOwner, { dataHandler ->
             when (dataHandler) {
                 is DataHandler.SUCCESS -> {
@@ -70,10 +83,7 @@ class TeamFragment : Fragment(R.layout.fragment_team) {
         else{
             seriesDetailsViewModel.getSAPKTMatchDetails()
         }
-
-       //setValue(seriesData!!)
     }
-
 
     fun setValue(seriesData : SeriesDetails){
         binding.textSeriesName.text = seriesData.matchDetails.series.name
@@ -143,6 +153,7 @@ class TeamFragment : Fragment(R.layout.fragment_team) {
         binding.textVenue.text = seriesData.matchDetails.venue.name
 
 
+
     }
 
 
@@ -185,5 +196,15 @@ class TeamFragment : Fragment(R.layout.fragment_team) {
         requireActivity().onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
     }
 
+
+    fun checkIsOnline(){
+        if(isOnline(requireActivity())) {
+            binding.OfflineView.visibility = View.GONE
+            liveCall()
+        }
+        else{
+            binding.OfflineView.visibility = View.VISIBLE
+        }
+    }
 
 }

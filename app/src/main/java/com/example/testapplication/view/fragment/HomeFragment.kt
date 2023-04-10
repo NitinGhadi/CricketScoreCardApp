@@ -11,6 +11,7 @@ import com.example.testapplication.databinding.FragmentHomeBinding
 import com.example.testapplication.model.SeriesDetails
 import com.example.testapplication.utils.DataHandler
 import com.example.testapplication.utils.LogData
+import com.example.testapplication.utils.isOnline
 import com.example.testapplication.view.adapter.SeriesAdapter
 import com.example.testapplication.viewModel.SeriesDetailsViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -34,6 +35,24 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onViewCreated(view, savedInstanceState)
         fragmentHomeBinding  = FragmentHomeBinding.bind(view)
 
+
+
+
+        checkIsOnline()
+        init()
+    }
+
+    fun checkIsOnline(){
+        if(isOnline(requireActivity())) {
+            fragmentHomeBinding.OfflineView.visibility = View.GONE
+            liveCall()
+        }
+        else{
+            fragmentHomeBinding.OfflineView.visibility = View.VISIBLE
+        }
+    }
+
+    fun liveCall(){
         // calling frist InZn api then SAPAK api
         seriesDetailsViewModel.seriesDetails.observe(viewLifecycleOwner, { dataHandler ->
             when (dataHandler) {
@@ -70,17 +89,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         seriesDetailsViewModel.getIndNzSeriesDetails()
         isFirstApiLoad = true
-
-
-
-        init()
     }
 
     fun setValue(){
-
         seriesAdapter.seriesList.submitList((arrayList))
-        
-
     }
     
     fun init(){
@@ -97,5 +109,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 bundle
             )
         }
+
+
+        fragmentHomeBinding.btnReTry.setOnClickListener{
+            checkIsOnline()
+        }
     }
+
+
 }
